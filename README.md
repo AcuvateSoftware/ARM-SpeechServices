@@ -1,4 +1,4 @@
-# BotCore-ARM-Main
+# ARM-SpeechServices
 ARM template for Speech services deployment. To be used by client teams for creating Azure resources for Speech services deployment.
 Provisions App service plan, Speech service and Cosmos DB.
 
