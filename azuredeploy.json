@@ -108,7 +108,7 @@
     },
     "Web App Name": {
       "type": "string",
-      "defaultValue": "ACU-SS-APP-DEV",
+      "defaultValue": "Shell-KC-ASP-UAT",
       "metadata": { "description": "Please enter the name of Web App." }
     },
     "Storage Account Name": {
