@@ -191,7 +191,10 @@
         "Locally- redundant storage(LRS)",
         "Geo- redundant storage(GRS)",
         "Read-access geo-redundant storage (RA-GRS)"
-      ]
+      ],
+      "metadata": {
+        "description": "The data in your Azure storage account is always replicated to to ensure durability and high availiability. Choose a replication strategy that matches your requirements."
+      }
     }
   },
   "variables": {},
