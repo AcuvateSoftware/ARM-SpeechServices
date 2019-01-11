@@ -157,6 +157,7 @@
         "Standard",
         "Premuim"
       ],
+      "defaultValue": "Standard",
       "metadata": {
         "description": "Select the pricing tier of Storage account."
       }
