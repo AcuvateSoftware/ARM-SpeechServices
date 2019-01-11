@@ -11,7 +11,7 @@
     },
     "Cosmos DB Location": {
       "type": "string",
-      "defaultValue": "UK South",
+      "defaultValue": "North Europe",
       "allowedValues": [
         "UK South",
         "UK West",
@@ -52,6 +52,7 @@
     },
     "Speech Service Location": {
       "type": "string",
+      "defaultValue": "North Europe",
       "allowedValues": [
         "West US",
         "West US 2",
@@ -118,7 +119,7 @@
     },
     "Storage Account Location": {
       "type": "string",
-      "defaultValue": "UK South",
+      "defaultValue": "North Europe",
       "allowedValues": [
         "UK South",
         "UK West",
