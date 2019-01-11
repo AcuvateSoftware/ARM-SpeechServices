@@ -4,7 +4,7 @@
   "parameters": {
     "Cosmos DB Name": {
       "type": "string",
-      "defaultValue": "knowledgecapturedev",
+      "defaultValue": "Shell-KC-CosmosDB-UAT",
       "metadata": {
         "description": "Please enter the name of Cosmos DB here."
       }
@@ -48,7 +48,7 @@
       "metadata": {
         "description": "Please enter the name of Speech Service here."
       },
-      "defaultValue": "KnowledgeCaptureSST-Dev"
+      "defaultValue": "Shell-KC-CS-UAT"
     },
     "Speech Service Location": {
       "type": "string",
@@ -83,7 +83,7 @@
       "metadata": {
         "description": "Please enter the name of app service plan that will host the application."
       },
-      "defaultValue": "ACU-RG-DEV"
+      "defaultValue": "Shell-KC-ASP-UAT"
     },
     "App Service Plan SKU": {
       "type": "string",
@@ -109,20 +109,56 @@
     "Web App Name": {
       "type": "string",
       "defaultValue": "ACU-SS-APP-DEV",
-      "metadata": { "description": "Please enter thr name of Web App." }
+      "metadata": { "description": "Please enter the name of Web App." }
     },
     "Storage Account Name": {
-      "type": "string"
+      "type": "string",
+      "defaultValue":"shellkcstorageuat",
+      "metadata": { "description": "Please enter the name of Storage account." }
     },
     "Storage Account Location": {
-      "type": "string"
+      "type": "string",
+      "defaultValue": "UK South",
+      "allowedValues": [
+        "UK South",
+        "UK West",
+        "Australia East",
+        "Australia Southeast",
+        "Brazil South",
+        "Canada Central",
+        "Canada East",
+        "Central India",
+        "Central US",
+        "East US",
+        "East US 2",
+        "France Central",
+        "Japan East",
+        "Japan West",
+        "Korea Central",
+        "Korea South",
+        "North Central US",
+        "North Europe",
+        "South Central US",
+        "South India",
+        "Southeast Asia",
+        "West Europe",
+        "West India",
+        "West US",
+        "West US 2"
+      ],
+      "metadata": {
+        "description": "Select the location of Storage account."
+      }
     },
     "Storage Account Tier": {
       "type": "string",
       "allowedValues": [
         "Standard",
         "Premuim"
-      ]
+      ],
+      "metadata": {
+        "description": "Select the pricing tier of Storage account."
+      }
     },
     "Storage Account Access Tier": {
       "type": "string",
@@ -130,7 +166,10 @@
       "allowedValues": [
         "Cool",
         "Hot"
-      ]
+      ],
+      "metadata": {
+        "description": "Select the access tier of Storage account. The account Access Tier is the default tier that is inferred by any blob without an explicitly set tier. The Hot Access Tier is ideal for frequently accessed data, and the Cool Access Tier is ideal for infrequently accessed data."
+      }
     },
     "Storage Account Kind": {
       "type": "string",
@@ -139,6 +178,18 @@
         "BlobStorage",
         "StorageV2 (general purpose v2)",
         "Storage (general purpose v1)"
+      ],
+      "metadata": {
+        "description": "Select the type of the Storage account."
+      }
+    },
+    "Storage Account Replication": {
+      "type": "string",
+      "defaultValue": "Read-access geo-redundant storage (RA-GRS)",
+      "allowedValues": [
+        "Locally- redundant storage(LRS)",
+        "Geo- redundant storage(GRS)",
+        "Read-access geo-redundant storage (RA-GRS)"
       ]
     }
   },
